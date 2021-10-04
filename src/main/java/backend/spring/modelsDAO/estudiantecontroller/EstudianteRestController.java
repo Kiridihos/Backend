@@ -16,7 +16,7 @@ import backend.spring.estudianteservice.IEstudianteService;
 import backend.spring.modelentity.Estudiante;
 
 @RestController
-@RequestMapping("/apii")
+@RequestMapping("/api")
 public class EstudianteRestController {
 	@Autowired
 	private IEstudianteService estudianteservice;
