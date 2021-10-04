@@ -45,6 +45,7 @@ public class EstudianteRestController {
 		Estudiante estudianteActual=estudianteservice.encontrarporId(id);
 		estudianteActual.setNombre(e.getNombre());
 		estudianteActual.setApellido(e.getApellido());
+		estudianteActual.setPromedio(e.getPromedio());
 		estudianteActual.setCarrera(e.getCarrera());
 		return estudianteservice.save(estudianteActual);
 	}

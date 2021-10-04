@@ -28,6 +28,9 @@ public class Estudiante implements Serializable {
 	private String apellido;
 	
 	@Column
+	private float promedio;
+	
+	@Column
 	private String carrera;
 
 	public long getId() {
@@ -52,6 +55,14 @@ public class Estudiante implements Serializable {
 
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
+	}
+	
+	public float getPromedio() {
+		return promedio;
+	}
+	
+	public void setPromedio(float promedio) {
+		this.promedio = promedio;
 	}
 
 	public String getCarrera() {
